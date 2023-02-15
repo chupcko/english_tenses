@@ -1,2 +1,2 @@
--Uvedi perfect/nonPerfect simple/continuous
--prebaci atribute na mala slova osim I
+-i pomocne glagole uradi kao $funkciju $v3(do)
+-uvedi skracene oblike ako postoje
