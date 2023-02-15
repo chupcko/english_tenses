@@ -1,10 +1,13 @@
 verbs = {
-// $v1        $vs       $vg         $v2        $v3
-  'enter': [ 'enters', 'entering', 'entered', 'entered' ],
-  'read':  [ 'reads',  'reding',   'read',    'read'    ],
-  'sleep': [ 'sleeps', 'sleeping', 'slept',   'slept'   ],
-  'work':  [ 'works',  'working',  'worked',  'worked'  ],
-  'write': [ 'writes', 'writing',  'wrote',   'written' ],
+// $v1        $vs        $vg         $v2        $v3
+  'enter': [ 'enters',  'entering', 'entered', 'entered' ],
+  'get':   [ 'gets',    'getting',  'got',     'gotten'  ],
+  'read':  [ 'reads',   'reding',   'read',    'read'    ],
+  'sleep': [ 'sleeps',  'sleeping', 'slept',   'slept'   ],
+  'study': [ 'studies', 'studying', 'studied', 'studied' ],
+  'take':  [ 'takes',   'taking',   'took',    'taken'   ],
+  'work':  [ 'works',   'working',  'worked',  'worked'  ],
+  'write': [ 'writes',  'writing',  'wrote',   'written' ],
 };
 
 tenses = {
