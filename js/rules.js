@@ -1,9 +1,14 @@
 class Rules {
   static verbs = {
 //   $v1        $vs        $vg         $v2        $v3
+    'do':    [ 'does',    'doing',    'did',     'done'    ],
     'enter': [ 'enters',  'entering', 'entered', 'entered' ],
     'get':   [ 'gets',    'getting',  'got',     'gotten'  ],
+    'have':  [ 'has',     'having',   'had',     'had'     ],
     'read':  [ 'reads',   'reding',   'read',    'read'    ],
+    'ring':  [ 'rings',   'ringing',  'rang',    'rung'    ],
+    'set':   [ 'sets',    'setting',  'set',     'set'     ],
+    'sing':  [ 'sings',   'singing',  'sang',    'sung'    ],
     'sleep': [ 'sleeps',  'sleeping', 'slept',   'slept'   ],
     'study': [ 'studies', 'studying', 'studied', 'studied' ],
     'take':  [ 'takes',   'taking',   'took',    'taken'   ],
@@ -94,11 +99,11 @@ class Rules {
   static split(s) {
     return s.split(/\s+/);
   }
-  
+
   static have_all_in(a, b) {
     return a.every((d) => b.includes(d));
   }
-  
+
   static interpolate(sentence, verb, subject) {
     return (
       sentence
@@ -117,10 +122,10 @@ class Rules {
     }
     let attributes_array = this.split(attributes);
     attributes_array.push(subject);
-    for(let tense_attribue in this.tenses) {
-      let tense_attribue_array = this.split(tense_attribue);
-      if(this.have_all_in(attributes_array, tense_attribue_array)) {
-        return this.interpolate(this.tenses[tense_attribue], verb, subject);
+    for(let tense_attribute in this.tenses) {
+      let tense_attribute_array = this.split(tense_attribute);
+      if(this.have_all_in(attributes_array, tense_attribute_array)) {
+        return this.interpolate(this.tenses[tense_attribute], verb, subject);
       }
     }
     return false;

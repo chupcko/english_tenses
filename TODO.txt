@@ -1,3 +1,4 @@
+-na jednoj straniu stavi positive negative statment question
 -i pomocne glagole uradi kao $funkciju $v3(do)
 -uvedi skracene oblike ako postoje
 -napravi regexp za skracene forme
