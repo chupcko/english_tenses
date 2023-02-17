@@ -85,7 +85,7 @@ class Rules {
     'question negative present nonPerfect continuous he she it': 'is $s not $vg',
     'question negative present nonPerfect continuous we you they': 'are $s not $vg',
     'question negative present perfect simple I we you they': 'have $s not $v3',
-    'question negative present perfect simple he she it': 'has $s not $vg',
+    'question negative present perfect simple he she it': 'has $s not $v3',
     'question negative present perfect continuous I we you they': 'have $s not been $vg',
     'question negative present perfect continuous he she it': 'has $s not been $vg',
     'question negative future nonPerfect simple I he she it we you they': 'will $s not $v1',
